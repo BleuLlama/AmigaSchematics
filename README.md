@@ -10,10 +10,10 @@ made using KiCad 4.0.7 on my Mac, although they should load in KiCad
 
 The projects included here are:
 
-* (A500_kyb_Mitsumi)[A500_kyb_Mitsumi) - Amiga 500 keyboard with Mitsumi board. (common)
+* A500_kyb_Mitsumi - Amiga 500 keyboard with Mitsumi board. (common)
 
 Soon perhaps:
-* (A500_kyb_2Conn)[A500_kyb_2Conn] - Early Amiga 500 keyboard with two ribbon connectors to the scan matrix
+* A500_kyb_2Conn - Early Amiga 500 keyboard with two ribbon connectors to the scan matrix
 
 
 

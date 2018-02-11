@@ -12,11 +12,12 @@ in [this thread](http://eab.abime.net/showthread.php?t=81893). The
 relevant text has been [copied into this
 repo](Reference/A5kyb_nocash_schem.txt) as well.
 
-The current schematic is also available in this directory in pdf and 
-png format.
+The current schematic is also available in this directory in pdf
+and png format. Please note the date and version in it if you are
+referencing corrections, etc.
 
-* [PDF](A500_Kyb_Mitsumi.pdf)
-* [PNG](A500_Kyb_Mitsumi.png)
+* A500_Kyb_Mitsumi.pdf
+* A500_Kyb_Mitsumi.png
 
 
 # Note
