@@ -1,0 +1,136 @@
+
+                 Amiga 500 Keyboard Schematic (nocash, 04 Mar 2016)
+  .-------------.
+  |      RAM_VCC|1 --VCC     .--R9--VCC          /X7  /X6  /X5  /X4  /X3  /X2
+  |     /Y15 PD7|2 -->----.--'- - - - - - - /Y15 N/A  N/A  N/A  N/A  N/A  N/A
+  |     /Y14 PD6|3 -->----|---------------- /Y14 NUM* EUL  CAPS TAB  `~   ESC
+  |     /Y13 PD5|4 -->----|---------------- /Y13 NUM+ Z    A    Q    1!   NUM(
+  |     /Y12 PD4|5 -->----|---------------- /Y12 NUM9 X    S    W    2@   F1
+  |     /Y11 PD3|6 -->----|---------------- /Y11 NUM6 C    D    E    3#   F2
+  |     /Y10 PD2|7 -->----|---------------- /Y10 NUM3 V    F    R    4$   F3
+  |      /Y9 PD1|8 -->----|---------------- /Y9  NUM. B    G    T    5%   F4
+  |      /Y8 PD0|9 -->----|---------------- /Y8  NUM8 N    H    Y    6^   F5
+  | MOS     XTLI|10-------|----.--C12--GND       |    |    |    |    |    |
+  | 6570    XTLO|11-------|--. Y1                |    |    |    |    |    |
+  | -036     GND|12--GND  |  '-'--C13--GND       |    |    |    |    |    |
+  |      /Y7 PC7|13-->----|---------------- /Y7  NUM5 M    J    U    7&   NUM)
+  | 6502 /Y6 PC6|14-->----|---------------- /Y6  NUM2 ,<   K    I    8*   F6
+  |      /Y5 PC5|15-->----|---------------- /Y5  ENTR .>   L    O    9(   NUM/
+  |      /Y4 PC4|16-->----|---------------- /Y4  NUM7 /?   ;:   P    0)   F7
+  |      /Y3 PC3|17-->----|---------------- /Y3  NUM4 N/A  '"   [{   -_   F8
+  |      /Y2 PC2|18-->----|---------------- /Y2  NUM1 SPC  EUR  ]}   =+   F9
+  |      /Y1 PC1|19-->----|---------------- /Y1  NUM0 BS   DEL  RET  \|   F10
+  |      /Y0 PC0|20-->----|---------------- /Y0  NUM- DOWN RGHT LEFT UP   HELP
+  |         CNTR|21--GND  |                      |    |    |    |    |    |
+  | CAPS_LED PB7|22-->----|-.                    |    |    |    |    |    |
+  |    /LAMI PB6|23<------|-|-- key              |    |    |    |    |    |
+  |    /LALT PB5|24<------|-|-- key              |    |    |    |    |    |
+  |    /LSHT PB4|25<------|-|-- key              |    |    |    |    |    |
+  |    /CTRL PB3|26<------|-|-- key              |    |    |    |    |    |
+  |    /RAMI PB2|27<------|-|-- key  .--C3--GND  |    |    |    |    |    |
+  |    /RALT PB1|28<------|-|-- key  +--C4--GND  |    |    |    |    |    |
+  |    /RSHT PB0|29<------|-|-- key  +--C14-GND  |    |    |    |    |    |
+  |     MAIN_VCC|30-------|-|--------'----VCC    |    |    |    |    |    |
+  |      /X7 PA7|31<------|-|--------------------'    |    |    |    |    |
+  |      /X6 PA6|32<------|-|-------------------------'    |    |    |    |
+  |      /X5 PA5|33<------|-|------------------------------'    |    |    |
+  |      /X4 PA4|34<------|-|-----------------------------------'    |    |
+  |      /X3 PA3|35<------|-|----------------------------------------'    |
+  |      /X2 PA2|36<------|-|---------------------------------------------'
+  |   SIOCLK PA1|37-->----|-|----------------------------------------------.
+  |   SIODAT PA0|38<->----|-|---------------------------------------------.|
+  |  /RESET /RES|39<------|-|-------------------------------------------. ||
+  |         /NMI|40--VCC  | |                                           | ||
+  '-------------'         | |                                           | ||
+                          | |                     ______                | ||
+                          | '-------------R10---E|Q2 NPN\               | ||
+     .--------------------'                      |BC458C |B--R4--/CAPS  | ||
+     |     .------------.  VCC--R7--.      GND--C|______/         LED   | ||
+     '--> 1|/TR  74   RC|15---------+                                   | ||
+    VCC-- 2|TR   LS    C|14---C10+--'    .------------.  VCC--R8--.     | ||
+    VCC-- 3|/RST 123   Q|13------------>9|/TR  74   RC|7 ---------+     | ||
+    VCC--16|VCC       /Q|4 --     VCC--10|TR   LS    C|6 ---C11---'     | ||
+           '------------'         VCC--11|/RST 123   Q|5 ------.        | ||
+                                  GND-.-8|GND       /Q|12--    |        | ||
+   /Y15 pulsed alive        VCC--C7---'  '------------'        |        | ||
+                                                               |        | ||
+                                                               |        | ||
+  .------------------------------------------------------------'        | ||
+  |                _____                                                | ||
+  |      /LAMI-- 3| NOR \    VCC--R1--.    ______                       | ||
+  |      /CTRL-- 4|74LS27|6-----------'--E|Q1 NPN\     .--R3--VCC       | ||
+  |      /RAMI-- 5|_____/                 |BC458C |B---+                | ||
+  |                                 GND--C|______/     +--C9--GND       | ||
+  |  .-------------------------------------------------'                | ||
+  |  |                                                                  | ||
+  |  |                                                                  | ||
+  |  |     .-----C6-------.                 .---------------------------' ||
+  |  |     |  .--------.  |                 |                 .--C2--GND  ||
+  |  | GND-'-1|GND  VCC|8-'-VCC             |           .-----'-----------'|
+  |  '-------2|TRIG Dis|7---.---+---R2--VCC |           |  .--.------------'
+  |  .-------3|OUT  Thr|6---'   '--+C5--GND |           |  |  '--C1--GND
+  |  | VCC---4|/RES  CV|5---C8----------GND |           |  |
+  |  |        | HA17555|                    |           |  |           .----.
+  |  |        '--------'                    |           |  '----[FB1]-1|KCLK|
+  |  |        _____                         |           '-------[FB2]-2|KDAT|
+  |  +----- 9| NOR \    /RESET to amiga     |           .-------[FB4]-3|/RES|
+  |  +-----10|74LS27|8----------------------------------'  VCC--[FB3]-4|+5V |
+  |  +-----11|_____/                        |                       --5|NC  |
+  |  |        _____                         |         RED LEDS   GND--6|GND |
+  |  +----- 1| NOR \    /RESET to 6502      |    GND--|<|--|<|--R6----7|PWR |
+  |  '----- 2|74LS27|12---------------------'    GND--|<|--|<|--R5----8|DRV |
+  '--------13|_____/                                 GREEN LEDS        '----'
+                                                                        amiga
+                                                                        cable
+
+    1   3   5   7   9   11  13  15  17  19  21  23  25  27  29  31
+  .----------------------------------------------------------------.
+  |X4  X6  X3  X2  VCC  CTL LAL Y14 Y12 Y10 Y8  Y6  Y4  Y2  Y0  LED| membrane
+  |  X5  X7  RSH  RAL RAM LSH LAM Y13 Y11 Y9  Y7  Y5  Y3  Y1  GND  | connector
+  '----------------------------------------------------------------'
+      2   4   6   8   10  12  14  16  18  20  22  24  26  28  30
+      
+
+Amiga 500 Keyboard Component List
+  PCB "MITSUMI, MTM-4V-0, PCB A-500, 56 A620A"
+  IC  40pin  MOS 6570-036 (keyboard controller, 6500/1 one-chip microcomputer)
+  IC  16pin  74LS123   (dual retriggerable monostable multivibrators)
+  IC  14pin  74LS27    (triple 3-input NOR gates)
+  IC   8pin  HA17555   (precision timer, compatible with NE555)
+  Y1   2pin  3.000MHz  (ceramic resonator)
+  Q1   3pin  C458 C    (BC458C, NPN transistor) (Ctrl+Amiga+Amiga)
+  Q2   3pin  C458 C    (BC458C, NPN transistor) (CAPS LED)
+  R1   2pin  47K Ohm   (for Q1 input/pullup) (Ctrl+Amiga+Amiga)
+  R2   2pin  47K Ohm   (for HA17555 dis+thr)
+  R3   2pin  1M Ohm    (for HA17555 trig) (Ctrl+Amiga+Amiga and power-up)
+  R4   2pin  150 Ohm   (for Q2 output/limit) (CAPS LED)
+  R5   2pin  22 Ohm    (for DRV GRN LED)
+  R6   2pin  22 Ohm    (for PW RED LED)
+  R7   2pin  120K Ohm  (for 74LS123 first RC)   brown-red-yellow ??? 120K ?
+  R8   2pin  10K Ohm   (for 74LS123 second RC)
+  R9   2pin  47K Ohm   (for 74LS123 first trigger)
+  R10  2pin  100 Ohm   (for Q2 input/limit) (CAPS LED)
+  C1   2pin  1nF       (for KCLK signal)
+  C2   2pin  1nF       (for KDAT signal)
+  C3   2pin  22uF 16V  (for 40pin IC supply)
+  C4   2pin  100nF     (for 40pin IC supply)
+  C5   2pin  10uF 16V  (for HA17555 dis+thr)
+  C6   2pin  100nF     (for HA17555 supply)
+  C7   2pin  100nF     (for 74LS123 supply)
+  C8   2pin  100nF     (for HA17555 cv)
+  C9   2pin  100nF     (for HA17555 trig) (power-up reset?)
+  C10  2pin  1uF 16V   (for 74LS123 first RC)
+  C11  2pin  100nF     (for 74LS123 second RC)
+  C12  2pin  10pF      (for Y1 clock)
+  C13  2pin  10pF      (for Y1 clock)
+  C14  2pin  not installed (for 40pin IC supply)
+  D    4pin  PW RED    (power LED)  (two diodes in series for "wide" light)
+  D    4pin  DRV GREEN (floppy LED) (two diodes in series for "wide" light)
+  FB1  2pin  not installed (alternately uses only a simple wire)
+  FB2  2pin  not installed (alternately uses only a simple wire)
+  FB3  2pin  not installed (alternately uses only a simple wire)
+  FB4  2pin  not installed (alternately uses only a simple wire)
+  CN   8pin  Connector to Amiga Mainboard
+  CN  31pin  Connector to Keyboard Membrane (including CAPS LED)
+
+  membrane key resistance is 190 ohm
