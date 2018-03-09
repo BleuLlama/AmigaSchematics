@@ -12,6 +12,8 @@ The projects included here are:
 
 * A500_kyb_Mitsumi - Amiga 500 keyboard with Mitsumi board. (common)
 
+* Controllers/CD32 - CD32 wired controller (with Red/Yellow/Green/Blue buttons)
+
 Soon perhaps:
 * A500_kyb_2Conn - Early Amiga 500 keyboard with two ribbon connectors to the scan matrix
 
