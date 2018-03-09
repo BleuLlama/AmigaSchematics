@@ -1,5 +1,6 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 
+
 # Temporary files
 *.000
 *.bak
@@ -23,3 +24,4 @@ _autosave-*
 
 # Additional
 .DS_Store
+*.icloud
