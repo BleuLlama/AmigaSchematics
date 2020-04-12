@@ -1,0 +1,61 @@
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/sym-lib-table” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/sym-lib-table-2020-04-11-23-51-42”.
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/A500Keyboard.sch” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/A500Keyboard-2020-04-11-23-51-42.sch”.
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/A500Keyboard.pro” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/A500Keyboard-2020-04-11-23-51-42.pro”.
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/A500Keyboard-cache.lib” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/A500Keyboard-cache-2020-04-11-23-51-42.lib”.
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/A500Keyboard-rescue.lib” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/A500Keyboard-rescue-2020-04-11-23-51-42.lib”.
+Info: Backing up file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/A500Keyboard-rescue.dcm” to file “/Users/laurent/Documents/Development/Git/GitHub/nekoniaow/AmigaSchematics/A500_kyb_Mitsumi/rescue-backup/A500Keyboard-rescue-2020-04-11-23-51-42.dcm”.
+Info: Adding library “A500Keyboard-rescue”, file “${KIPRJMOD}/A500Keyboard-rescue.lib” to project symbol library table.
+Info: Adding library “A500_Parts”, file “${KIPRJMOD}/A500_Parts.lib” to project symbol library table.
+Info: Symbol library table mapping complete!
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “Crystal” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “Interface” mapped to symbol library “A500_Parts”.
+Symbol “6570-036” mapped to symbol library “A500_Parts”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “LED_ALT” mapped to symbol library “Device”.
+Symbol “LED_ALT” mapped to symbol library “Device”.
+Symbol “LED_ALT” mapped to symbol library “Device”.
+Symbol “LED_ALT” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “Q_NPN_ECB” mapped to symbol library “Device”.
+Symbol “KYB_MATRIX” mapped to symbol library “A500_Parts”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “Q_NPN_ECB” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “NE555” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “74LS27” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “74LS27” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “74LS123” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “74LS123” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “R” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “74LS27” mapped to symbol library “A500Keyboard-rescue”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “VCC” mapped to symbol library “power”.
+Symbol “GND” mapped to symbol library “power”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “C” mapped to symbol library “Device”.
+Symbol “GND” mapped to symbol library “power”.

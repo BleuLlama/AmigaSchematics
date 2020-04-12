@@ -1,37 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:A500_Parts
-LIBS:A500Keyboard_Parts
-LIBS:A500Keyboard-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -46,7 +14,7 @@ Comment3 "Based on source by nocash 2016/03/04"
 Comment4 ""
 $EndDescr
 $Comp
-L KYB_MATRIX J1
+L A500_Parts:KYB_MATRIX J1
 U 1 1 5A78FF17
 P 4700 2450
 F 0 "J1" H 5500 1025 60  0000 C CNN
@@ -57,7 +25,7 @@ F 3 "" H 3950 1675 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7904F6
 P 1250 950
 F 0 "#PWR?" H 1250 800 50  0001 C CNN
@@ -68,7 +36,7 @@ F 3 "" H 1250 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal Y1
+L Device:Crystal Y1
 U 1 1 5A790564
 P 1100 2400
 F 0 "Y1" V 1225 2325 50  0000 C CNN
@@ -79,7 +47,7 @@ F 3 "" H 1100 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C13
+L Device:C C13
 U 1 1 5A790650
 P 1100 2950
 F 0 "C13" H 950 2850 50  0000 L CNN
@@ -90,7 +58,7 @@ F 3 "" H 1100 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L Device:C C12
 U 1 1 5A7906A2
 P 700 2950
 F 0 "C12" H 550 2850 50  0000 L CNN
@@ -101,7 +69,7 @@ F 3 "" H 700 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A7906CF
 P 1325 5400
 F 0 "#PWR?" H 1325 5150 50  0001 C CNN
@@ -112,7 +80,7 @@ F 3 "" H 1325 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A790774
 P 900 3450
 F 0 "#PWR?" H 900 3200 50  0001 C CNN
@@ -123,7 +91,7 @@ F 3 "" H 900 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A7914C4
 P 5150 4150
 F 0 "#PWR?" H 5150 3900 50  0001 C CNN
@@ -134,7 +102,7 @@ F 3 "" H 5150 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7919FB
 P 5150 875
 F 0 "#PWR?" H 5150 725 50  0001 C CNN
@@ -145,7 +113,7 @@ F 3 "" H 5150 875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface J2
+L A500_Parts:Interface J2
 U 1 1 5A7921BD
 P 3800 6900
 F 0 "J2" H 4000 6225 60  0000 C CNN
@@ -156,7 +124,7 @@ F 3 "" H 3625 7175 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 6570-036 IC1
+L A500_Parts:6570-036 IC1
 U 1 1 5A7900F4
 P 2350 3650
 F 0 "IC1" H 3000 775 60  0000 C CNN
@@ -167,7 +135,7 @@ F 3 "" H 2350 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A792668
 P 3250 7500
 F 0 "#PWR?" H 3250 7250 50  0001 C CNN
@@ -178,7 +146,7 @@ F 3 "" H 3250 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A792794
 P 3250 6300
 F 0 "#PWR?" H 3250 6150 50  0001 C CNN
@@ -189,7 +157,7 @@ F 3 "" H 3250 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L Device:R R5
 U 1 1 5A792885
 P 4650 6900
 F 0 "R5" V 4730 6900 50  0000 C CNN
@@ -200,7 +168,7 @@ F 3 "" H 4650 6900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R6
+L Device:R R6
 U 1 1 5A792959
 P 4650 7450
 F 0 "R6" V 4730 7450 50  0000 C CNN
@@ -211,7 +179,7 @@ F 3 "" H 4650 7450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED_ALT D?
+L Device:LED_ALT D?
 U 1 1 5A792ADB
 P 5050 6900
 F 0 "D?" H 5050 7000 50  0000 C CNN
@@ -222,7 +190,7 @@ F 3 "" H 5050 6900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED_ALT D?
+L Device:LED_ALT D?
 U 1 1 5A792B33
 P 5450 6900
 F 0 "D?" H 5450 7000 50  0000 C CNN
@@ -233,7 +201,7 @@ F 3 "" H 5450 6900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED_ALT D?
+L Device:LED_ALT D?
 U 1 1 5A792B6B
 P 5050 7450
 F 0 "D?" H 5050 7550 50  0000 C CNN
@@ -244,7 +212,7 @@ F 3 "" H 5050 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LED_ALT D?
+L Device:LED_ALT D?
 U 1 1 5A792BA6
 P 5475 7450
 F 0 "D?" H 5475 7550 50  0000 C CNN
@@ -255,7 +223,7 @@ F 3 "" H 5475 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A792E24
 P 5750 7600
 F 0 "#PWR?" H 5750 7350 50  0001 C CNN
@@ -266,7 +234,7 @@ F 3 "" H 5750 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L Device:R R10
 U 1 1 5A7A6032
 P 1050 6850
 F 0 "R10" V 1130 6850 50  0000 C CNN
@@ -277,7 +245,7 @@ F 3 "" H 1050 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_ECB Q2
+L Device:Q_NPN_ECB Q2
 U 1 1 5A7A621D
 P 1350 7250
 F 0 "Q2" H 1225 7400 50  0000 L CNN
@@ -288,7 +256,7 @@ F 3 "" H 1350 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A7B62F0
 P 1450 7550
 F 0 "#PWR?" H 1450 7300 50  0001 C CNN
@@ -313,7 +281,7 @@ RST_OUT
 Text GLabel 3325 1150 2    60   BiDi ~ 0
 PULS
 $Comp
-L R R1
+L Device:R R1
 U 1 1 5A7B723F
 P 7650 1625
 F 0 "R1" V 7730 1625 50  0000 C CNN
@@ -324,7 +292,7 @@ F 3 "" H 7650 1625 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7B7428
 P 9000 1125
 F 0 "#PWR?" H 9000 975 50  0001 C CNN
@@ -335,7 +303,7 @@ F 3 "" H 9000 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_ECB Q1
+L Device:Q_NPN_ECB Q1
 U 1 1 5A7B77AC
 P 7925 1900
 F 0 "Q1" H 7825 2050 50  0000 L CNN
@@ -346,7 +314,7 @@ F 3 "" H 7925 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A7B7A0F
 P 8025 2375
 F 0 "#PWR?" H 8025 2125 50  0001 C CNN
@@ -357,7 +325,7 @@ F 3 "" H 8025 2375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 5A7B80F4
 P 8025 1475
 F 0 "R3" V 8105 1475 50  0000 C CNN
@@ -368,7 +336,7 @@ F 3 "" H 8025 1475 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C9
+L Device:C C9
 U 1 1 5A7B835E
 P 8375 1900
 F 0 "C9" H 8400 2000 50  0000 L CNN
@@ -379,7 +347,7 @@ F 3 "" H 8375 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L NE555 IC4
+L A500Keyboard-rescue:NE555 IC4
 U 1 1 5A7B87DB
 P 9325 1875
 F 0 "IC4" H 9550 1500 50  0000 L CNN
@@ -390,7 +358,7 @@ F 3 "" H 9325 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L Device:C C6
 U 1 1 5A7B8B74
 P 10375 1875
 F 0 "C6" H 10400 1975 50  0000 L CNN
@@ -401,7 +369,7 @@ F 3 "" H 10375 1875 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 5A7B8F9D
 P 10050 1575
 F 0 "R2" V 10130 1575 50  0000 C CNN
@@ -412,7 +380,7 @@ F 3 "" H 10050 1575 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C5
+L Device:C C5
 U 1 1 5A7B927F
 P 10050 2100
 F 0 "C5" H 10075 2200 50  0000 L CNN
@@ -423,7 +391,7 @@ F 3 "" H 10050 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C8
+L Device:C C8
 U 1 1 5A7B9471
 P 8625 2100
 F 0 "C8" H 8650 2200 50  0000 L CNN
@@ -434,7 +402,7 @@ F 3 "" H 8625 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 74LS27 IC2-
+L A500Keyboard-rescue:74LS27 IC2-
 U 3 1 5A7B99D8
 P 9150 3175
 F 0 "IC2-" H 9150 3225 50  0000 C CNN
@@ -445,7 +413,7 @@ F 3 "" H 9150 3175 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 74LS27 IC2-
+L A500Keyboard-rescue:74LS27 IC2-
 U 1 1 5A7B9CF7
 P 9150 3700
 F 0 "IC2-" H 9150 3750 50  0000 C CNN
@@ -459,7 +427,7 @@ NoConn ~ 4250 6400
 Text GLabel 6875 5100 0    60   BiDi ~ 0
 PULS
 $Comp
-L 74LS123 IC3-
+L A500Keyboard-rescue:74LS123 IC3-
 U 2 1 5A7BAB90
 P 9550 5500
 F 0 "IC3-" H 9550 5450 50  0000 C CNN
@@ -470,7 +438,7 @@ F 3 "" H 9550 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74LS123 IC3-
+L A500Keyboard-rescue:74LS123 IC3-
 U 1 1 5A7BAC84
 P 7900 5450
 F 0 "IC3-" H 7900 5400 50  0000 C CNN
@@ -481,7 +449,7 @@ F 3 "" H 7900 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7BB49D
 P 7000 4350
 F 0 "#PWR?" H 7000 4200 50  0001 C CNN
@@ -494,7 +462,7 @@ $EndComp
 NoConn ~ 10300 5800
 NoConn ~ 8650 5750
 $Comp
-L R R7
+L Device:R R7
 U 1 1 5A7BBAD7
 P 7400 4550
 F 0 "R7" V 7480 4550 50  0000 C CNN
@@ -505,7 +473,7 @@ F 3 "" H 7400 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C2
+L Device:C C2
 U 1 1 5A7BBC07
 P 3050 7150
 F 0 "C2" H 3075 7250 50  0000 L CNN
@@ -516,7 +484,7 @@ F 3 "" H 3050 7150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C1
+L Device:C C1
 U 1 1 5A7BC4CD
 P 2700 7150
 F 0 "C1" H 2725 7250 50  0000 L CNN
@@ -527,7 +495,7 @@ F 3 "" H 2700 7150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C10
+L Device:C C10
 U 1 1 5A7BCF32
 P 7900 4550
 F 0 "C10" V 7950 4600 50  0000 L CNN
@@ -538,7 +506,7 @@ F 3 "" H 7900 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7BD612
 P 8725 4350
 F 0 "#PWR?" H 8725 4200 50  0001 C CNN
@@ -549,7 +517,7 @@ F 3 "" H 8725 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R8
+L Device:R R8
 U 1 1 5A7BE17B
 P 9075 4550
 F 0 "R8" V 9155 4550 50  0000 C CNN
@@ -560,7 +528,7 @@ F 3 "" H 9075 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C11
+L Device:C C11
 U 1 1 5A7BE445
 P 9550 4550
 F 0 "C11" V 9600 4600 50  0000 L CNN
@@ -571,7 +539,7 @@ F 3 "" H 9550 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74LS27 IC2-
+L A500Keyboard-rescue:74LS27 IC2-
 U 2 1 5A791C50
 P 6975 1900
 F 0 "IC2-" H 6975 1950 50  0000 C CNN
@@ -584,7 +552,7 @@ $EndComp
 Text Notes 6300 6725 0    60   Italic 0
 Note: Lift Q1 pin 3 to disable Ctrl-A-A A500/6500 reset
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5A7ED1CA
 P 6875 3500
 F 0 "C3" H 6900 3600 50  0000 L CNN
@@ -595,7 +563,7 @@ F 3 "" H 6875 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR?
+L power:VCC #PWR?
 U 1 1 5A7ED264
 P 7225 3175
 F 0 "#PWR?" H 7225 3025 50  0001 C CNN
@@ -606,7 +574,7 @@ F 3 "" H 7225 3175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 5A7ED2FB
 P 7225 3825
 F 0 "#PWR?" H 7225 3575 50  0001 C CNN
@@ -617,7 +585,7 @@ F 3 "" H 7225 3825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 5A7EDB46
 P 7225 3500
 F 0 "C4" H 7250 3600 50  0000 L CNN
@@ -628,7 +596,7 @@ F 3 "" H 7225 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C14
+L Device:C C14
 U 1 1 5A7EDC3D
 P 7575 3500
 F 0 "C14" H 7600 3600 50  0000 L CNN
