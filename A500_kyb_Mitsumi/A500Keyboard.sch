@@ -14,37 +14,15 @@ Comment3 "yorgle@gmail.com"
 Comment4 "Based on source by nocash 2016/03/04"
 $EndDescr
 $Comp
-L A500_Parts:KYB_MATRIX J1
-U 1 1 5A78FF17
-P 4600 2450
-F 0 "J1" H 5400 1025 60  0000 C CNN
-F 1 "KYB_MATRIX" H 3875 3850 60  0000 C CNN
-F 2 "" H 3850 1675 60  0001 C CNN
-F 3 "" H 3850 1675 60  0001 C CNN
-	1    4600 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5A7904F6
-P 1150 950
-F 0 "#PWR?" H 1150 800 50  0001 C CNN
-F 1 "VCC" H 1150 1100 50  0000 C CNN
-F 2 "" H 1150 950 50  0001 C CNN
-F 3 "" H 1150 950 50  0001 C CNN
-	1    1150 950 
+P 1000 950
+F 0 "#PWR?" H 1000 800 50  0001 C CNN
+F 1 "VCC" H 1000 1100 50  0000 C CNN
+F 2 "" H 1000 950 50  0001 C CNN
+F 3 "" H 1000 950 50  0001 C CNN
+	1    1000 950 
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal Y1
-U 1 1 5A790564
-P 1100 2400
-F 0 "Y1" V 1225 2325 50  0000 C CNN
-F 1 "3.000 MHz" V 950 2625 50  0000 C CNN
-F 2 "" H 1100 2400 50  0001 C CNN
-F 3 "" H 1100 2400 50  0001 C CNN
-	1    1100 2400
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C13
@@ -66,17 +44,6 @@ F 1 "10pF" H 725 3200 50  0000 L CNN
 F 2 "" H 738 2950 50  0001 C CNN
 F 3 "" H 700 3100 50  0001 C CNN
 	1    700  3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5A7906CF
-P 1225 5400
-F 0 "#PWR?" H 1225 5150 50  0001 C CNN
-F 1 "GND" H 1225 5250 50  0000 C CNN
-F 2 "" H 1225 5400 50  0001 C CNN
-F 3 "" H 1225 5400 50  0001 C CNN
-	1    1225 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -115,23 +82,23 @@ $EndComp
 $Comp
 L Device:R R10
 U 1 1 5A7A6032
-P 950 6850
-F 0 "R10" V 1030 6850 50  0000 C CNN
-F 1 "100" V 950 6850 50  0000 C CNN
-F 2 "" V 880 6850 50  0001 C CNN
-F 3 "" H 950 6850 50  0001 C CNN
-	1    950  6850
+P 950 6800
+F 0 "R10" V 1030 6800 50  0000 C CNN
+F 1 "100" V 950 6800 50  0000 C CNN
+F 2 "" V 880 6800 50  0001 C CNN
+F 3 "" H 950 6800 50  0001 C CNN
+	1    950  6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_ECB Q2
 U 1 1 5A7A621D
-P 1250 7250
-F 0 "Q2" H 1125 7400 50  0000 L CNN
-F 1 "BC485C" H 1025 7050 50  0000 L CNN
-F 2 "" H 1450 7350 50  0001 C CNN
-F 3 "" H 1250 7250 50  0001 C CNN
-	1    1250 7250
+P 1250 7200
+F 0 "Q2" H 1125 7350 50  0000 L CNN
+F 1 "BC485C" H 1025 7000 50  0000 L CNN
+F 2 "" H 1450 7300 50  0001 C CNN
+F 3 "" H 1250 7200 50  0001 C CNN
+	1    1250 7200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -145,18 +112,16 @@ F 3 "" H 1350 7550 50  0001 C CNN
 	1    1350 7550
 	-1   0    0    -1  
 $EndComp
-Text GLabel 1425 6900 2    60   Output ~ 0
+Text GLabel 1425 6850 2    60   Output ~ 0
 CAPS_L
 Text GLabel 5750 1600 2    60   Input ~ 0
 CAPS_L
-Text GLabel 1225 5850 0    60   Input ~ 0
+Text GLabel 1150 5850 0    60   Input ~ 0
 6500_RST
 Text GLabel 8400 3650 0    60   Output ~ 0
 6500_RST
 Text GLabel 8400 3125 0    60   Output ~ 0
-_BKRESET
-Text GLabel 3225 1150 2    60   Output ~ 0
-PULS
+_KBRESET
 $Comp
 L Device:R R1
 U 1 1 5A7B723F
@@ -456,19 +421,15 @@ Text Notes 7550 1100 0    60   ~ 0
 Text Notes 7900 6450 0    60   ~ 0
 Power-On Reset for 6500
 Wire Wire Line
-	1150 950  1150 1150
+	1000 950  1000 1150
 Wire Wire Line
-	1150 1150 1150 1325
+	1000 1150 1000 1300
 Wire Wire Line
-	1150 1325 1150 1500
-Connection ~ 1150 1150
-Connection ~ 1150 1325
-Wire Wire Line
-	1100 2250 1100 2050
+	1000 1300 1000 1450
+Connection ~ 1000 1150
+Connection ~ 1000 1300
 Wire Wire Line
 	700  2050 1100 2050
-Wire Wire Line
-	1100 2550 1100 2800
 Connection ~ 1100 2050
 Wire Wire Line
 	700  3250 700  3400
@@ -481,11 +442,6 @@ Wire Wire Line
 Wire Wire Line
 	900  3600 900  3400
 Connection ~ 900  3400
-Wire Wire Line
-	1225 5150 1225 5300
-Wire Wire Line
-	1225 5300 1225 5400
-Connection ~ 1225 5300
 Wire Wire Line
 	3900 4150 3900 4000
 Wire Wire Line
@@ -537,7 +493,7 @@ Wire Wire Line
 Connection ~ 6100 2600
 Connection ~ 5800 3050
 Wire Wire Line
-	1350 7450 1350 7550
+	1350 7400 1350 7550
 Wire Wire Line
 	7650 1275 7650 1475
 Wire Wire Line
@@ -549,9 +505,9 @@ Wire Wire Line
 Wire Wire Line
 	8025 2325 8025 2375
 Wire Wire Line
-	1425 6900 1350 6900
+	1425 6850 1350 6850
 Wire Wire Line
-	1350 6900 1350 7050
+	1350 6850 1350 7000
 Wire Wire Line
 	8025 1625 8025 1675
 Wire Wire Line
@@ -687,11 +643,11 @@ Wire Wire Line
 	8800 5300 8725 5300
 Connection ~ 8725 5300
 Wire Wire Line
-	1050 7250 950  7250
+	1050 7200 950  7200
 Wire Wire Line
-	950  7250 950  7000
+	950  7200 950  6950
 Wire Wire Line
-	950  6700 950  6200
+	950  6650 950  6200
 Wire Wire Line
 	6200 1750 5800 1750
 Wire Wire Line
@@ -805,29 +761,23 @@ F 3 "" H 9325 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1225 5850 1350 5850
+	1150 5850 1350 5850
 Wire Wire Line
 	5800 5150 3150 5150
 Wire Wire Line
 	950  6200 1350 6200
 Wire Wire Line
-	1350 5150 1225 5150
-Wire Wire Line
 	3150 4150 3900 4150
-Wire Wire Line
-	1350 5300 1225 5300
 Wire Wire Line
 	1100 2800 1350 2800
 Wire Wire Line
-	1150 1500 1350 1500
+	1000 1450 1350 1450
 Wire Wire Line
-	1150 1325 1350 1325
+	1000 1300 1350 1300
 Wire Wire Line
 	3150 1400 3400 1400
 Wire Wire Line
-	3225 1150 3150 1150
-Wire Wire Line
-	1350 1150 1150 1150
+	1350 1150 1000 1150
 $Comp
 L Device:C C1
 U 1 1 5A7BC4CD
@@ -912,7 +862,7 @@ F 3 "" H 2250 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3500 6950 0    60   Input ~ 0
-_BKRESET
+_KBRESET
 Wire Wire Line
 	2200 7550 2550 7550
 Wire Wire Line
@@ -1099,4 +1049,126 @@ F 3 "~" H 4400 7050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 1900 7650 1900
+Text Label 3150 1400 0    60   ~ 0
+~Y14
+Text Label 3150 1550 0    60   ~ 0
+~Y13
+Text Label 3150 1700 0    60   ~ 0
+~Y12
+Text Label 3150 1850 0    60   ~ 0
+~Y11
+Text Label 3150 2000 0    60   ~ 0
+~Y10
+Text Label 3150 2150 0    60   ~ 0
+~Y9
+Text Label 3150 2300 0    60   ~ 0
+~Y8
+Text Label 3150 2450 0    60   ~ 0
+~Y7
+Text Label 3150 2600 0    60   ~ 0
+~Y6
+Text Label 3150 2750 0    60   ~ 0
+~Y5
+Text Label 3150 2900 0    60   ~ 0
+~Y4
+Text Label 3150 3050 0    60   ~ 0
+~Y3
+Text Label 3150 3200 0    60   ~ 0
+~Y2
+Text Label 3150 3350 0    60   ~ 0
+~Y1
+Text Label 3150 3500 0    60   ~ 0
+~Y0
+Text GLabel 3500 750  2    60   Output ~ 0
+PULS
+$Comp
+L A500_Parts:KYB_MATRIX J1
+U 1 1 5A78FF17
+P 4600 2450
+F 0 "J1" H 5400 1025 60  0000 C CNN
+F 1 "KYB_MATRIX" H 3875 3850 60  0000 C CNN
+F 2 "" H 3850 1675 60  0001 C CNN
+F 3 "" H 3850 1675 60  0001 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1150 3400 1150
+Wire Wire Line
+	3400 1150 3400 750 
+Wire Wire Line
+	3400 750  3500 750 
+Text Label 3150 1150 0    60   ~ 0
+PULS
+Text Label 3150 4150 0    60   ~ 0
+~X7
+Text Label 3150 4300 0    60   ~ 0
+~X6
+Text Label 3150 4450 0    60   ~ 0
+~X5
+Text Label 3150 4600 0    60   ~ 0
+~X4
+Text Label 3150 4750 0    60   ~ 0
+~X3
+Text Label 3150 4900 0    60   ~ 0
+~X2
+Text Label 3150 5150 0    60   ~ 0
+~LAMI
+Text Label 3150 5300 0    60   ~ 0
+~LALT
+Text Label 3150 5450 0    60   ~ 0
+~LSHF
+Text Label 3150 5600 0    60   ~ 0
+~CTRL
+Text Label 3150 5750 0    60   ~ 0
+~RAMI
+Text Label 3150 5900 0    60   ~ 0
+~RALT
+Text Label 3150 6050 0    60   ~ 0
+~RSHF
+Wire Wire Line
+	1350 5300 1000 5300
+Wire Wire Line
+	1350 5150 1000 5150
+Connection ~ 1000 5300
+Wire Wire Line
+	1000 5300 1000 5500
+Wire Wire Line
+	1000 5150 1000 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5A7906CF
+P 1000 5500
+F 0 "#PWR?" H 1000 5250 50  0001 C CNN
+F 1 "GND" H 1000 5350 50  0000 C CNN
+F 2 "" H 1000 5500 50  0001 C CNN
+F 3 "" H 1000 5500 50  0001 C CNN
+	1    1000 5500
+	1    0    0    -1  
+$EndComp
+Text Label 1350 6200 2    60   ~ 0
+~LED
+Wire Wire Line
+	1100 2550 1100 2800
+Wire Wire Line
+	1100 2250 1100 2050
+$Comp
+L Device:Crystal Y1
+U 1 1 5A790564
+P 1100 2400
+F 0 "Y1" V 1225 2325 50  0000 C CNN
+F 1 "3.000 MHz" V 950 2625 50  0000 C CNN
+F 2 "" H 1100 2400 50  0001 C CNN
+F 3 "" H 1100 2400 50  0001 C CNN
+	1    1100 2400
+	0    1    1    0   
+$EndComp
+Text Label 1350 1150 2    60   ~ 0
+VCC
+Text Label 1350 1300 2    60   ~ 0
+VCC
+Text Label 2350 6650 0    60   ~ 0
+CLOCK
+Text Label 2200 6650 2    60   ~ 0
+DATA
 $EndSCHEMATC
