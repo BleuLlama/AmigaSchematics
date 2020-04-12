@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name A500Keyboard-rescue)(type Legacy)(uri ${KIPRJMOD}/A500Keyboard-rescue.lib)(options "")(descr ""))
+  (lib (name A500_Parts)(type Legacy)(uri ${KIPRJMOD}/A500_Parts.lib)(options "")(descr ""))
+)
