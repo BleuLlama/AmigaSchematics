@@ -1,4 +1,4 @@
-update=Friday, January 04, 2019 at 11:23:33 AM
+update=Sunday, October 15, 2023 at 10:26:57 PM
 version=1
 last_client=kicad
 [general]
@@ -27,6 +27,10 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -34,9 +38,6 @@ PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-[eeschema]
-version=1
-LibDir=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
