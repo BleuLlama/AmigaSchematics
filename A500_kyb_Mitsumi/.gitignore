@@ -1,0 +1,5 @@
+# These are created by Kicad 5 when it converts libraries.
+# They are a backup of the existing data so there is no point having them under source control.
+
+rescue-backup/
+*-bak
